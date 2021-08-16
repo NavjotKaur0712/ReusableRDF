@@ -1,0 +1,18 @@
+<h2>Reausable Reactive Form</h2>
+<app-custom-input [userForm]="userForm"  (newEvent)="onSubmit()"></app-custom-input> 
+
+<!-- <form [formGroup]="form">
+<app-custom-input label="Total Miles" 
+                  type="text"
+                  fieldId="miles"
+                  [control]="form.get('miles')">
+</app-custom-input>
+
+<app-custom-input     label="Dropdown" 
+                      fieldId='dropdown' 
+                      [values]="values" 
+                      [control]="form.get('dropdown')" 
+                      Selected="Fetch Data">
+
+</app-custom-input>
+</form> -->

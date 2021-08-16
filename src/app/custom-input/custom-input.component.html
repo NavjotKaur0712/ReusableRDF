@@ -1,0 +1,26 @@
+<div class="container">
+    <form [formGroup]="userForm" (ngSubmit)= "onSubmit($event)">
+        <div class="form-group">
+            <label for="id">Id: </label>
+            <input id="id" type="text" class="form-control" formControlName="id">
+        </div>    
+        <div class="form-group">
+            <label for="name">Name: </label>
+            <input id="name" type="text" class="form-control" formControlName="name">
+        </div>
+        <div class="form-group">
+            <label for="username">Username: </label>
+            <input id="username" type="text" class="form-control" formControlName="username">
+        </div>    
+        
+ <button type="submit" class="btn btn-secondary">Submit</button>
+<!-- 
+ <input [formControl]="control"
+        [type]="type"
+        [id]="fieldId"
+        autocomplete="off"
+  /> 
+
+ <select name="fieldId" [id]="fieldId" >
+    <option [selected]="v === Selected" *ngFor="let v of values" [ngValue]="v">{{v}}</option>
+</select> -->
